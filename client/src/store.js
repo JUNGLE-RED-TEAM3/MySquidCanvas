@@ -35,11 +35,6 @@ const useStore = create((set) => ({
   myUserId: undefined,
   setMyUserId: (myUserId) => { set({myUserId: myUserId}) },
 
-  gameStart: false,
-  setGameStart: (gameStart) => { set({gameStart: gameStart}) },
-
-  gameEnd: false,
-  setGameEnd: (gameEnd) => { set({gameEnd: gameEnd}) },
   // MRSEO:
   Phase: Ready,
   setReady: (Phase) => { set({Phase: Phase}) },
