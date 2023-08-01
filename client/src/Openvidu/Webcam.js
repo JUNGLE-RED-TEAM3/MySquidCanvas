@@ -65,6 +65,9 @@ const Webcam = () => {
         useStore.getState().setGamers({
           name: JSON.parse(event.stream.connection.data).clientData,
           streamManager: subscriber,
+          // MRSEO:
+          drawable: false,
+          canSeeAns: false,
         });
         return subscribers;
       };

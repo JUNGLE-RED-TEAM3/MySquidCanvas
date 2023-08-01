@@ -40,6 +40,21 @@ const useStore = create((set) => ({
 
   gameEnd: false,
   setGameEnd: (gameEnd) => { set({gameEnd: gameEnd}) },
+  // MRSEO:
+  Phase: Ready,
+  setReady: (Phase) => { set({Phase: Phase}) },
+
+  curTurn: 1,
+  setCurTurn: (curTurn) => { set({curTurn: curTurn}) },
+
+  whoIsPainter: undefined,
+  setWhoIsPainter: (whoIsPainter) => { set({whoIsPainter: whoIsPainter}) },
+
+  redScoreCnt: 0,
+  setRedScoreCnt: (redScoreCnt) => { set({redScoreCnt: redScoreCnt}) },
+
+  blueScoreCnt: 0,
+  setBlueScoreCnt: (blueScoreCnt) => { set({blueScoreCnt: blueScoreCnt}) },
 
 }));
 
